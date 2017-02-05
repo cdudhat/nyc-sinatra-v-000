@@ -1,10 +1,12 @@
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Year Completed</th>
-  </tr>
-  <tr>
-    <td><%= @landmark.name %></td>
-    <td><%= @landmark.year_completed %></td>
-  </tr>
-<table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Landmark</title>
+  </head>
+  <body>
+    <h2>Landmark Details</h2>
+    <p>Name: <%= @landmark.name %></p>
+    <p>Year Completed: <%= @landmark.year_completed %></p>
+  </body>
+</html>

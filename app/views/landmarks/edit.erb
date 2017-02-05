@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit your Landmark</title>
+  </head>
+  <body>
+    <h2>Edit Your Landmark Details</h2>
+    <form class="" action="/landmarks/<%= @landmark.id %>" method="post">
+      <p>Name: <input type="text" name="landmark[name]" id="landmark_name" value="<%= @landmark.name %>"></p>
+      <p>Year Completed: <input type="text" name="landmark[year_completed]" id="landmark_year_completed" value="<%= @landmark.year_completed %>"></p>
+      <input type="submit" value="Edit Landmark">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Landmarks</title>
+  </head>
+  <body>
+    <h2>List of all Landmarks!</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Year Completed</th>
+      </tr>
+      <tr>
+        <% @landmarks.each do |landmark| %>
+          <td><a href="/landmark/<%= landmark.id %>"><%= landmark.name %></a></td>
+          <td><%= landmark.year_completed %></td>
+        <% end %>
+      </tr>
+    <table>
+
+    <!-- Alternate Display
+    <ul>
+      <% @landmarks.each do |landmark| %>
+        <li>Name: <a href="/landmark/<%= landmark.id %>"><%= landmark.name %></a> Year Completed: <%= landmark.year_completed %></li>
+      <% end %>
+    </ul>
+    -->
+
+  </body>
+</html>
